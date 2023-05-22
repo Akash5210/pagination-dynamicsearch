@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/pagination-dynamicsearch/static/css/main.31d6cfe0.css",
+    "main.js": "/pagination-dynamicsearch/static/js/main.3797a58e.js",
+    "index.html": "/pagination-dynamicsearch/index.html",
+    "main.3797a58e.js.map": "/pagination-dynamicsearch/static/js/main.3797a58e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.3797a58e.js"
+  ]
+}
