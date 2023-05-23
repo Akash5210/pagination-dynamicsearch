@@ -25,7 +25,8 @@ You may also see any lint errors in the console.
 
 [https://www.mockaroo.com/]\
 [https://www.youtube.com/watch?v=wAGIOCqS8tk&ab_channel=CodeBlessYou]\
-[https://www.youtube.com/watch?v=mZvKPtH9Fzo&t=1s&ab_channel=PedroTech]
+[https://www.youtube.com/watch?v=mZvKPtH9Fzo&t=1s&ab_channel=PedroTech]\
+[https://www.youtube.com/watch?v=Yfd6N0G1Sq0&t=725s&ab_channel=ThapaTechnical]
 
 ## `npm run deploy`
 for generating the build folder and deploying on github pages io. use the below command
