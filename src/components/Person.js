@@ -13,6 +13,7 @@ export default function Person({tableData, firstPostIndex, lastPostIndex, setCur
             <input type='text' className='form-control' onChange={(e)=> setSearchInput(e.target.value)}
             placeholder='searching...'/>
         </div>
+        <div className='tableData'>
         <table className='table table-striped table-hover table-responsive'>
             <thead>
                 <tr>
@@ -42,6 +43,7 @@ export default function Person({tableData, firstPostIndex, lastPostIndex, setCur
                 .slice(firstPostIndex, lastPostIndex)}              
             </tbody>
         </table>
+        </div>
     </div>
   )
 }
