@@ -1,0 +1,50 @@
+.dark-theme{
+    --btn-bg-color: #5f99be;
+    --btn-text-clr: #fff;
+    --bg-clr: #111b20;
+    --bs-table-color: #fff;
+    --bs-table-bg: #111b20;
+    --bs-border-color:  rgb(209, 200, 200); 
+    --bs-body-color: rgb(185, 180, 180);
+    --bs-body-bg: rgb(46, 44, 44);
+}
+
+.light-theme{
+    --btn-bg-color:  #fff;
+    --btn-text-clr: #000;
+    --bg-clr: #fff;
+    --bs-table-color: #111b20;
+    --bs-table-bg: #fff;
+    --bs-border-color:  rgb(209, 200, 200);
+    --bs-body-color: rgb(76, 78, 76);
+    --bs-body-bg: #fff;
+}
+
+body{
+    background-color: var(--bg-clr);
+    color: var(--btn-text-clr);
+}
+.table{
+    --bs-table-color: var(--bs-table-color);
+    --bs-table-bg: var(--bs-table-bg);
+    --bs-table-border-color: var(--bs-border-color); 
+    
+    --bs-table-striped-color: var(--bs-body-color);
+    --bs-table-striped-bg: rgba(133, 126, 126, 0.05);
+    --bs-table-hover-color: var(--bs-body-color);
+    --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+}
+input{
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+}
+input::placeholder {
+    color: var(--bs-table-border-color) !important;
+}
+.theme-toggler{
+    font-size: 30px;
+    border-radius: 50%;
+}
+.table{
+    height: 28.2rem;
+}

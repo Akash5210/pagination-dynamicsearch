@@ -9,11 +9,11 @@ export default function Person({tableData, firstPostIndex, lastPostIndex, setCur
 
   return (
     <div className=''>
-        <div className='search-box my-3'>
+        <div className='search-box my-2'>
             <input type='text' className='form-control' onChange={(e)=> setSearchInput(e.target.value)}
             placeholder='searching...'/>
         </div>
-        <table className='table table-striped table-hover'>
+        <table className='table table-striped table-hover table-responsive'>
             <thead>
                 <tr>
                     <th>ID</th>

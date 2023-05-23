@@ -8,7 +8,7 @@ export default function Pagination({totalPosts, postsPerPage, setCurrentPage, cu
   }
 
   return (
-    <div>
+    <div className='text-center pagination-btn'>
         <span className='btn text-primary' onClick={()=> {if(currentPage>1) setCurrentPage(currentPage-1)}}>Previous</span>
         {pages.map((page,index) => {
             return <button key={index} type='button' 

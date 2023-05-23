@@ -8,10 +8,22 @@ function App() {
   const [tableData, setTableData] = useState("");
   const [currentPage, setCurrentPage] = useState(1);          //it is current active page
   const [postsPerPage, setPostPerPage] = useState(10);
+  const [theme, setTheme] = useState({themeValue: "light-theme", themeIcon: "fa fa-moon-o"});     // state for theme
 
   useEffect(()=>{
     setTableData(tableCollection);
-  }, [])
+  }, []);
+
+        //theme toggler start*******
+  const toggleTheme = ()=>{
+    theme.themeValue === "dark-theme" ? setTheme({themeValue: "light-theme", themeIcon: "fa fa-moon-o"}) 
+      : setTheme({themeValue: "dark-theme", themeIcon: "fa fa-sun-o"});
+  }
+  useEffect(()=>{
+    document.body.className = theme.themeValue; 
+
+  }, [theme]);
+        //theme toggler end*********
   
   const lastPostIndex = currentPage * postsPerPage;
   const firstPostIndex = lastPostIndex - postsPerPage;
@@ -19,14 +31,20 @@ function App() {
 
   return (
     <div className="App container">
-      <h2 className='mt-2'>Welcome to person data</h2>
+      <div className='d-flex mt-2 justify-content-between'>
+        <h2 className=''>Welcome to person data</h2>
+        <div className="">
+          <span class="theme-toggler" onClick={toggleTheme}>
+            <i className={theme.themeIcon} /> 
+          </span> 
+        </div>  
+      </div>
       <Person 
         tableData={tableData} 
         firstPostIndex={firstPostIndex} 
         lastPostIndex={lastPostIndex}  
         setCurrentPage={setCurrentPage}
       />
-      {/* <Person tableData={currentPosts} /> */}
       <Pagination 
         totalPosts={tableData.length} 
         postsPerPage={postsPerPage} 
